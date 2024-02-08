@@ -13,15 +13,36 @@ class LinkedList:
         new_node = Node(data)
         if not self.head:
             self.head = new_node
-        else:
-            last_node = self.head
-            while last_node.next:
-                last_node = last_node.next
-            last_node.next = new_node
+            return
+        last_node = self.head
+        while last_node.next:
+              last_node = last_node.next
+              last_node.next = new_node
 
- 
+    def prepend(self,data):
+        new_node = Node(data)
+        new_node.next = self.head
+        self.head = new_node
+
+    def insert_after_node(self, prev_node, data):
+        if not prev_node:
+            print("Previous Node is not present")
+            return
+        new_node = Node(data)
+        new_node.next = prev_node.next
+        prev_node.next = new_node
+
+
+    def display(self):
+        current_node = self.head
+        while current_node:
+            print(current_node.data, end=" ")
+            current_node = current_node.next
+        # print("None")
     
 
 linkedList1 = LinkedList()
-print(linkedList1)
+linkedList1.append(1)
+linkedList1.append(2)
+# linkedList1.display()
         
