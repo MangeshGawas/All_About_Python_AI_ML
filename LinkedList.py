@@ -9,15 +9,16 @@ class LinkedList:
     def __init__(self):
         self.head = None
 
-    def append(self,data):
+    def append(self, data):
         new_node = Node(data)
         if not self.head:
             self.head = new_node
-            return
-        last_node = self.head
-        while last_node.next:
-              last_node = last_node.next
-              last_node.next = new_node
+        else:
+            current = self.head
+            while current.next:
+                current = current.next
+            current.next = new_node
+
 
     def prepend(self,data):
         new_node = Node(data)
@@ -36,13 +37,15 @@ class LinkedList:
     def display(self):
         current_node = self.head
         while current_node:
-            print(current_node.data, end=" ")
+            print(current_node.data, "->", end=" ")
             current_node = current_node.next
-        # print("None")
+        print("None")
     
 
 linkedList1 = LinkedList()
 linkedList1.append(1)
 linkedList1.append(2)
-# linkedList1.display()
+linkedList1.prepend(0)
+linkedList1.insert_after_node(linkedList1.head.next,1.5)
+linkedList1.display()
         
