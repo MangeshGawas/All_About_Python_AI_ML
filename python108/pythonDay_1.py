@@ -13,7 +13,7 @@ Python is the high level interpreted programming language, simple to read.Develo
 #print Statement
 print("hello World")
 
-#String Manipulation
+#String Manipulation and Creating variable
 message = "Hello"
 name = "Bond"
 full_message = message + "," + name + "!"
