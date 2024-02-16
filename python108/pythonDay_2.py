@@ -36,5 +36,29 @@ person = {"name":"Amit","age":24}
 unique_numbers = {1,2,3,4,5} #there is no duplicate value present in the set
 
 
+#How to Manipulate String
 
+greeting = "Hello"
+name = "Alice"
+full_message = greeting + ", " + name + "!"
+
+#String Indexing and slicing
+message ="Python"
+first_char = message[0]
+print(first_char )
+substring = message[2:5]
+print(substring)
+
+#String Method
+text = "   Hello , World!"
+text_stripped = text.strip()
+print(text_stripped)
+
+words = text.split(',')
+print(words)
+
+#String Formatting
+age = 25
+formatted_message = f"My age is {age}"
+print(formatted_message)
 
