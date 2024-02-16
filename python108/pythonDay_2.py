@@ -62,3 +62,24 @@ age = 25
 formatted_message = f"My age is {age}"
 print(formatted_message)
 
+print("############mini project##########")
+
+#Mini Project of the Day : Initial Generator
+
+#take an user input for full Name
+full_name = input("Enter your full Name:")
+
+#split the full name into individual words
+name_parts = full_name.split()
+
+
+#Initialize an empty string to store initials
+initials = ""
+
+#iterate over each words in the name_part list
+for name_part in name_parts:
+    #add the first char of each words to the initials strng
+    initials += name_part[0].upper()
+
+#Display the initials
+print("Your initials are:", initials)
