@@ -39,3 +39,14 @@ if a > 0 or b>0:
 if not(a<0):
     print("At least one of a or b is positive")
 
+#mini project : odd-even Number checker
+
+#take a user input for a number
+num = int(input("Enter the number which you want to check is even or odd"))
+
+#check if the number is odd or even
+
+if num % 2 == 0:
+    print(f"{num}Provided number is Even")
+else:
+    print("Its Odd number")
