@@ -50,3 +50,43 @@ if num % 2 == 0:
     print(f"{num}Provided number is Even")
 else:
     print("Its Odd number")
+
+#Project: Munber Guessing Game
+import random
+
+def nummber_guessing_game():
+    print("Number GUessing Game")
+    print("I m thinking of a number between 1 and 100")
+
+    #Generate a random number between 1 and 100
+    sceret_number = random.randint(1,100)
+
+    #set the number of attempt 
+    max_attempts = 5
+    attempts = 0
+
+    while attempts < max_attempts:
+        #user guess value
+        guess = int(input("Enter ypur guess:"))
+
+        #increment the number of attempts
+        attempts += 1
+
+        #checks if the guess is correct
+        if guess == sceret_number:
+            print("Congratulatiions! You guessed the number correct")
+            break
+        elif guess < sceret_number:
+            print("Too low , please select the number again")
+        else:
+            print("Too high , please select the number again")
+    if attempts == max_attempts:
+        print("sorry your all 5 attempts got over")
+
+
+#call the function to start the game
+nummber_guessing_game()
+
+
+
+    
