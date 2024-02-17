@@ -24,4 +24,18 @@ elif z > 0:
     print('z is positive number')
 else:
     print('z is 0')
-    
+
+
+#Logical Opertor
+a = 10
+b = 5
+
+if a > 0 and b>0:
+    print(f"Both {a} and {b} are positive number")
+
+if a > 0 or b>0:
+    print(f"Both {a} or {b} are positive number")
+
+if not(a<0):
+    print("At least one of a or b is positive")
+
