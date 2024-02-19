@@ -92,3 +92,7 @@ def generate_password(length = 8):
     return password
 print("Random Password:"+ generate_password(10))
 
+#Random element selection
+my_list = ["apple", "oranges","cherry", "date"]
+random_element = random.choice(my_list)
+print("Prandom Element :"+random_element)
