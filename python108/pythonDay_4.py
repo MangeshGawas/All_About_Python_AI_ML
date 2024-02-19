@@ -38,3 +38,48 @@ print(squares)
 #Nested Lists
 nested_list = [[1,2,3],[4,5,6], [7,8,9]]
 print(nested_list[1][2])
+
+#Random library
+#Project : Lottery Number Generator
+import random
+
+def generate_lottery_number():
+    print("The Lottery Number GUessing")
+
+    start = int(input("Enter the start of the range :"))
+    end = int(input("Enter the end of the range:"))
+
+    #ensure that the range is valid
+    if start >= end:
+        print("Invalid Range! Please enter the valid range")
+        return
+    #Take user input for the number of lottery no to generate
+    num_numbers = int(input("How many lottery numbers to generate "))
+
+    #ensure that the numbers of lottery numbers is valid
+    if num_numbers >(end - start + 1):
+        print("INvalid number of lottery number !Please enter a smaller value")
+        return
+    
+    #Generate unique lottery numbers
+    lottery_numbers = random.sample(range(start , end + 1),num_numbers)
+
+    #sort the generated numbers
+    lottery_numbers.sort()
+
+    #Display the generate lottery number
+    print("Your lottery numbers are:")
+    print(lottery_numbers)
+
+#call the function to generate lottery numbers
+generate_lottery_number()
+
+#Logic Building mini project
+#Random Number Sum
+
+numbers = [random.randint(1,100) for _ in range(5)]
+total = sum(numbers)
+print("Random numbers", numbers)
+print("Sum of the random numbers:", total)
+    
+
