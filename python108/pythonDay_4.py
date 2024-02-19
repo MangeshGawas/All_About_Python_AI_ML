@@ -82,4 +82,13 @@ total = sum(numbers)
 print("Random numbers", numbers)
 print("Sum of the random numbers:", total)
     
+#Random Password generator
+#import random
+
+import string
+def generate_password(length = 8):
+    characters = string.ascii_letters + string.digits + string.punctuation
+    password = ''.join(random.choice(characters) for _ in range(length))
+    return password
+print("Random Password:"+ generate_password(10))
 
