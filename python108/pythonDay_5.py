@@ -26,3 +26,10 @@ num = int(input("which table you want , please mentioned the number"))
 print("Multiplication table of ", num)
 for i in range(1,11):
     print(num, "x", i, "=", num * i)
+
+#3)Factorial Calculation
+num = 5
+factorial = 1
+for i in range(1, num+1):
+    factorial *= i
+print("Factorial of ", num ,":", factorial)
