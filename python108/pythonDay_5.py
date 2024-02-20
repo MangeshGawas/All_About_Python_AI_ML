@@ -33,3 +33,41 @@ factorial = 1
 for i in range(1, num+1):
     factorial *= i
 print("Factorial of ", num ,":", factorial)
+
+#mini Project
+#Simple calculator
+
+def calculator():
+    print("Welcome to the Simple Calculator")
+    while True:
+        print("\nOperation")
+        print("1. Addition")
+        print("2. Subbtraction")
+        print("3. Multiplication")
+        print("4. Division")
+        print("5. Exit")
+        choice = input("Enter your choice (1-5)")
+        if choice == "5":
+            print("Existing the calculator")
+            break
+        elif choice in ("1",'2','3','4'):
+            num1 = float(input("Enter the first number"))
+            num2 = float(input("Enter the second number"))
+            if choice == "1":
+                result = num1 + num2
+                print("Result:",result)
+            elif choice == "2":
+                result = num1 - num2
+                print("Result:",result)
+            elif choice == "3":
+                result = num1 * num2
+                print("Result:",result)
+            elif choice == "4":
+                if num2 != 0:
+                    result = num1 / num2
+                    print("Result:",result)
+                else:
+                    print("Error, Division by zero")
+        else:
+            print("Invalid Choice")
+calculator()
