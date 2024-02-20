@@ -35,7 +35,7 @@ for i in range(1, num+1):
 print("Factorial of ", num ,":", factorial)
 
 #mini Project
-#Simple calculator
+#Simple calculator code
 
 def calculator():
     print("Welcome to the Simple Calculator")
