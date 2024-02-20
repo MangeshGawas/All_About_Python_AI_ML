@@ -13,3 +13,10 @@ i = 0
 while i <= 5:
     print(i)
     i = i+1
+
+#Logic Building code
+#1) Sum of number
+total = 0
+for num in range(1,11):
+    total += num
+print("Sum if the 1 to 10 :",total)
