@@ -85,5 +85,28 @@ def display_word(word, guessed_letters):
             result += "_"
     return result
 
+def hangman():
+    print("Hangman Game")
+    word = choose_word()
+    guessed_letters = []
+    attempts =6
+    while attempts> 0:
+        print("\nWord:", display_word(word, guessed_letters))
+        guess = input("Enter a letter:").lower()
+        if len(guess)==1 and guess.isalpha():
+            if guess in guessed_letters:
+                print("Already guessed that letter")
+            elif guess in word:
+                guessed_letters.append(guess)
+                if display_word(word,guessed_letters) == word:
+                    print("Well done")
+                    break
+            else:
+                attempts -= 1
+        else:
+            print("Invalid single letter")
+    else:
+        print("You run out of attempts")
 
+hangman()
     
