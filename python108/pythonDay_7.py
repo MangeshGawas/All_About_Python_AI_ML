@@ -37,5 +37,34 @@ def sum_number(*args):
 result = sum_number(1,2,3,4,5)
 print(result)
 
+#Return statement
+def multiply(a,b):
+    return(a*b)
+result = multiply(12,4)
+print(result)
 
+#DocString
+def greet(name):
+    """
+    This function greets the user
+    
+    Keyword arguments:
+    argument -- description
+    Return: return_description
+    """
+    print("Hello",name)
+
+#scope of variable
+x = 10
+def func():
+    y = 20 
+    print(x)
+    print(y)
+
+func()
+
+#lamda function
+square = lambda x:x**2
+result = square(5)
+print(result,"here is the result of lamda function")
 
