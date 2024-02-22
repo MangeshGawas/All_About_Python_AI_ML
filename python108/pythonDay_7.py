@@ -68,3 +68,22 @@ square = lambda x:x**2
 result = square(5)
 print(result,"here is the result of lamda function")
 
+#mini Project Hangman
+
+import random
+def choose_word():
+    words = ["apple", "banana", "cherry", "oranges", "grapes"]
+    return random.choice(words)
+print(choose_word())
+
+def display_word(word, guessed_letters):
+    result = ""
+    for char in word:
+        if char in guessed_letters:
+            result += char
+        else:
+            result += "_"
+    return result
+
+
+    
