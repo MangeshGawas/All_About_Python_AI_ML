@@ -27,5 +27,15 @@ def greet(name, age):
     print(f'Name:{name}, Age:{age}')
 greet(age=25, name="Mangesh")
 
+#Arbitrary Number of Arguments
+def sum_number(*args):
+    total=0
+    for num in args:
+        total += num
+    return total
+
+result = sum_number(1,2,3,4,5)
+print(result)
+
 
 
