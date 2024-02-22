@@ -23,3 +23,9 @@ greet() #since function not taking any arguement so its print default name that 
 greet("Sanvi")
 
 #Keyword Argument
+def greet(name, age):
+    print(f'Name:{name}, Age:{age}')
+greet(age=25, name="Mangesh")
+
+
+
