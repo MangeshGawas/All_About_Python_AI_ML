@@ -18,3 +18,19 @@ print(person.keys())
 print(person.values())
 
 
+#Nested Lists
+matrix = [[1,2,3],[4,5,6],[7,8,9]]
+print(matrix[0][1]) 
+
+
+#nested dictionaries
+person ={
+    "name":"Mangesh",
+    "age":25,
+    "address":{
+        "city":"New York",
+        "zipcode":"10001"
+    }
+}
+
+print(person["address"]["city"])
