@@ -20,3 +20,9 @@ func2()
 print(x , "after modifying")
 
 ####Local Variable
+def funcLocalVariable():
+    y = 20
+    print(y, "here is the y")
+funcLocalVariable()
+
+#if I need print y outside the funcLocalVarible it will throw an error
