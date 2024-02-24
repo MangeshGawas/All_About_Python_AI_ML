@@ -26,3 +26,14 @@ def funcLocalVariable():
 funcLocalVariable()
 
 #if I need print y outside the funcLocalVarible it will throw an error
+
+
+#Variable scope resolutions
+def outer():
+    y = 20
+
+    def inner():
+        print(x , "inner")
+        print(y, 'inner') #accessing enclosing functions local vaeiable
+    inner()
+outer()
