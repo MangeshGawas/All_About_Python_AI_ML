@@ -37,3 +37,15 @@ def outer():
         print(y, 'inner') #accessing enclosing functions local vaeiable
     inner()
 outer()
+
+#NON local
+def outer1():
+    y = 20
+
+    def inner():
+        nonlocal y
+        y =400
+        print(x , "inner")
+        print(y, 'inner non local') #accessing enclosing functions local vaeiable
+    inner()
+outer1()
