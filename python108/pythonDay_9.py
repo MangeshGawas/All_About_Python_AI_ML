@@ -12,3 +12,11 @@ def func():
     print(x)
 func()
 
+def func2():
+    global x
+    x = 20 #modifying global variable
+
+func2()
+print(x , "after modifying")
+
+####Local Variable
