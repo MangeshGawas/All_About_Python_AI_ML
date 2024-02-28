@@ -16,3 +16,6 @@ even_number = filter(lambda x: x%2==0, numbers)
 print(list(even_number))
 
 #sorted
+fruits = ["apple","mango", "grapes", "date"]
+sorted_fruits = sorted(fruits, key= lambda x : len(x))
+print(sorted_fruits)
