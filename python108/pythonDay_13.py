@@ -15,5 +15,14 @@ def is_prime(n):
     for i in range(2, int(0**0.5) + 1):
         if n % i == 0:
             return False
-        return True
-print(is_prime(11))
+    return True
+print(is_prime(3))
+
+#count the number of character
+def count_character(s):
+    counts = {}
+    for char in s:
+        counts[char] = counts.get(char,0) +1
+    return counts
+
+print(count_character("ajay"))
