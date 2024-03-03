@@ -12,3 +12,9 @@ print(my_tuple[2])
 print(my_tuple[-1])
 print(my_tuple[-2])
 
+#tuple method
+index = my_tuple.index(2)
+print(index)
+
+countMethodOutput = my_tuple.count(2)
+print(countMethodOutput)
