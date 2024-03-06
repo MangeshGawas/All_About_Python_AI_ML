@@ -33,3 +33,11 @@ print(sentence)
 # replace()
 new_string = my_string1.replace('Hello', "Mangesh")
 print(new_string)
+
+#coding practice
+def reverse_string(s):
+    return s[::-1]
+
+print(reverse_string("ABCD"))
+
+
