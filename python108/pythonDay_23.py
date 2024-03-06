@@ -40,4 +40,12 @@ def reverse_string(s):
 
 print(reverse_string("ABCD"))
 
-
+#Counting vowels
+def count_vowels(s):
+    vowels = 'aeioAEIOU'
+    count = 0
+    for char in vowels:
+        if char in vowels:
+            count = count + 1
+    return count
+print(count_vowels("Hello World"))
