@@ -31,3 +31,5 @@ sentence = ' '.join(words)
 print(sentence)
 
 # replace()
+new_string = my_string1.replace('Hello', "Mangesh")
+print(new_string)
