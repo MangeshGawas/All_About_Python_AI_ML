@@ -50,3 +50,10 @@ def count_vowels(s):
             count = count + 1
     return count
 print(count_vowels("Hello World"))
+
+#palindrome
+def is_palindrome(s):
+    return s == s[::-1]
+print(is_palindrome('radar'))
+print(is_palindrome('Man'))
+
