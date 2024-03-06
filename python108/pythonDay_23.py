@@ -57,3 +57,14 @@ def is_palindrome(s):
 print(is_palindrome('radar'))
 print(is_palindrome('Man'))
 
+
+#removing the duplicate character from the given string
+def remove_duplicates(s):
+    unique_chars = []
+    for char in s:
+        if char not in unique_chars:
+            unique_chars.append(char)
+    return " ".join(unique_chars)
+
+print(remove_duplicates("hello"))
+
