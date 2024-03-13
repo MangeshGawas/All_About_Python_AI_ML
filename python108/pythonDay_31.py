@@ -12,3 +12,5 @@ class Dog:
 class Cat:
     def sound(self): # method overloading Animals
         return "Meow!"
+    
+dog = Dog()
