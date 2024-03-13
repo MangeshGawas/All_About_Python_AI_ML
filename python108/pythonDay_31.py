@@ -14,3 +14,4 @@ class Cat:
         return "Meow!"
     
 dog = Dog()
+cat = Cat()
