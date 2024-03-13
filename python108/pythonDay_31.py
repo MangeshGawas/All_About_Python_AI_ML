@@ -5,13 +5,16 @@ class Animal:
     def sound(self):
         return "Some generic sound"
     
-class Dog:
+class Dog(Animal):
     def bark(self):
         return "Woof!"
 
-class Cat:
+class Cat(Animal):
     def sound(self): # method overloading Animals
         return "Meow!"
     
 dog = Dog()
 cat = Cat()
+
+print(dog.bark())
+print(cat.sound())
