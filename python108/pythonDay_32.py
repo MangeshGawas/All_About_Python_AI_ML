@@ -23,3 +23,13 @@ dog = Dog()
 cat = Cat()
 print(make_sound(dog)) 
 print(make_sound(cat)) 
+
+# Method 
+class Calculator:
+    def add(self,a , b=0):
+        return a + b
+    
+#method overloading with default parameter value
+calc = Calculator()
+print(calc.add(2))
+print(calc.add(2,3))
