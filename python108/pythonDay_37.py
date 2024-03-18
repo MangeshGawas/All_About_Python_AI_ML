@@ -19,3 +19,28 @@ print(rect.area())
 print(rect.parimeter())
 
 
+# Excercise2
+import math
+
+class Square(Rectangle):
+    def __init__(self,side):
+        super().__init__(side,side)
+
+class Circle:
+    def __init__(self,radius):
+        self.radius = radius
+
+    def area(self):
+        return math.pi * self.radius
+    
+    def perimeter(self):
+        return 2* math.pi * self.radius
+    
+square = Square(5)
+print("Square Area:",square.area())
+print("Primeter :",square.parimeter())
+
+circle = Circle(3)
+print("Circle Area", circle.area())
+print("Circle perimeter", circle.perimeter())
+
