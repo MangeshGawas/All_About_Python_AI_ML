@@ -30,3 +30,11 @@ except ZeroDivisionError:
 finally:
     print("Clean up")
 
+
+print("Else block")
+try:
+    x= 10/10
+except ZeroDivisionError:
+    print("error:division by zero")
+else:
+    print("No error")
