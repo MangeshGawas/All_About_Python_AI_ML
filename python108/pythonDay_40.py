@@ -20,3 +20,8 @@ result = add1(99,1)
 print("result =",result)
 
 
+
+#####
+result = apply_operation(lambda u,v: u+v*2, 2,8)
+print(result)
+
