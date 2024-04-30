@@ -13,3 +13,10 @@ result2 = apply_operation(subtract, 7,5)
 print(f"result1 ={result1}\nresult2={result2}")
 
 
+######Lamda Expression
+
+add1 = lambda x,y:x+y
+result = add1(99,1)
+print("result =",result)
+
+
