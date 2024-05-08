@@ -42,3 +42,22 @@ print(list(even))
 from functools import reduce
 total = reduce(lambda x,y:x+y,numbers)
 print(total,"Here is the total")
+
+
+#decorator
+import time
+def timer(func):
+    def wrapper(*args, **kwargs):
+        start_time = time.time()
+        result = func(*args,**kwargs)
+        end_time = time.time()
+        print(f"Time Taken by {func.__name__}:{end_time-start_time} seconds")
+        return result
+    return wrapper
+@timer
+def some_function():
+    time.sleep(1)
+
+
+some_function()
+
