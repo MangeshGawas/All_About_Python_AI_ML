@@ -24,3 +24,10 @@ print("Occurances:",matches)
 #replace a pattern with a replacement
 new_text = re.sub(pattern, "banana", text)
 print("New text:",new_text)
+
+
+
+#Application of regex
+text = "Email me at abc@gmail.com or xyz@gmail.com"
+emails = re.findall(r'\b[A-Za-z)-9._%+-]+@[A-za-z0-9]+\.[A-Z|a-z]{2,}\b',text)
+print("found all emails:",emails)
