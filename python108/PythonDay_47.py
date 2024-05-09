@@ -43,3 +43,13 @@ print(dot_product)
 print("____________________")
 arr = np.array([[1,2],[3,4]])
 print(arr.T)
+
+
+#numpy functions
+arr = np.array([1,2,3,4,5])
+print(np.sqrt(arr))
+print(np.exp(arr))
+print(np.sin(arr))
+print(np.mean(arr))
+print(np.median(arr))
+print(np.std(arr))
