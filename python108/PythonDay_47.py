@@ -24,3 +24,22 @@ print("__________________________")
 
 linspace_arr = np.linspace(0,1,5)
 print(linspace_arr)
+
+print("Numpy Operation")
+
+arr1 = np.array([1,2,3])
+arr2 = np.array([4,5,6])
+
+print(arr1 + arr2)
+print(arr1 - arr2)
+print(arr1 * arr2)
+print(arr1 / arr2)
+
+print("____________________")
+print("Dot Product")
+dot_product = np.dot(arr1,arr2)
+print(dot_product)
+
+print("____________________")
+arr = np.array([[1,2],[3,4]])
+print(arr.T)
