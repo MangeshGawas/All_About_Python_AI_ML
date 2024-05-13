@@ -23,7 +23,6 @@ def index():
     return render_template('index.html',name=names)
 
 @app.route('/recommend', methods=['POST'])
-@app.route('/recommend', methods=['POST'])
 def recom_song():
     user_song = request.form['song']  # Changed key to 'song'
     songs = recommendation(user_song)
